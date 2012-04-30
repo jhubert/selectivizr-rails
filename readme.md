@@ -15,3 +15,8 @@ Don't forget to run `bundle update` after upgrading to the latest gem version to
 License
 =======
 This gem code is free to use, modify, distribute or use in any way you would like. The selectivizr library is released under the MIT License ( http://www.opensource.org/licenses/mit-license.php )
+
+
+Thanks
+======
+A large portion of this gem was assembled based on the source code for the modernizer-rails gem (https://github.com/russfrisch/modernizr-rails) by Russ Frisch (https://github.com/russfrisch)
