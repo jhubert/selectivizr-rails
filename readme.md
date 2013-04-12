@@ -1,22 +1,29 @@
 About
 ======
-The selectivizr-rails gem will include the Selectivizr.js library (http://selectivizr.com/) into your Rails 3.1 or higher app via the asset pipeline.
+The selectivizr-rails gem will include the [selectivizr.js](http://selectivizr.com/) library into your Rails app via the asset pipeline.
 
 How to Use
 ===========
-Add the following to your GemFile:<br> 
-`gem 'selectivizr-rails'`<br>
+Add the following to your Gemfile and run `bundle install`:
 
-Then add the following to your application.js manifest:<br>
-`//= require selectivizr`<br>
+    gem 'selectivizr-rails'
 
-Don't forget to run `bundle update` after upgrading to the latest gem version to ensure it's used by your rails app.
+Add the following to the `head` tag in your layout:
+
+    <!--[if lte IE 8]>
+    = javascript_include_tag 'selectivizr'
+    <![endif]-->
+
+Requirements
+============
+* Rails 3.1+
+* The main JavaScript library (JQuery, Prototype, etc.) must be included prior to the selectivizr include tag.
 
 License
 =======
-This gem code is free to use, modify, distribute or use in any way you would like. The selectivizr library is released under the MIT License ( http://www.opensource.org/licenses/mit-license.php )
+This gem code is free to use, modify, distribute or use in any way you would like. The selectivizr.js library is released under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
 
 
 Thanks
 ======
-A large portion of this gem was assembled based on the source code for the modernizer-rails gem (https://github.com/russfrisch/modernizr-rails) by Russ Frisch (https://github.com/russfrisch)
+A large portion of this gem was assembled based on the source code for the [modernizer-rails gem](https://github.com/russfrisch/modernizr-rails) by [Russ Frisch](https://github.com/russfrisch).
