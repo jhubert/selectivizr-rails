@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Jeremy Hubert"]
   s.email       = ["jhubert@gmail.com"]
   s.homepage    = "https://github.com/jhubert/selectivizr-rails"
-  s.summary     = %q{Gem wrapper to include the Selectivizr.js library via the asset pipeline.}
-  s.description = %q{This Selectivizr.js was built using the download at http://www.selectivizr.com}
+  s.summary     = %q{Gem wrapper to include the selectivizr.js library via the asset pipeline.}
+  s.description = %q{This selectivizr.js was built using the download at http://www.selectivizr.com}
 
   s.rubyforge_project = "selectivizr-rails"
 
