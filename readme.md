@@ -13,6 +13,10 @@ Add the following to the `head` tag in your layout:
     <!--[if lte IE 8]>
     = javascript_include_tag 'selectivizr'
     <![endif]-->
+    
+And in your config/environments/production.rb file add the following line:
+
+    config.assets.precompile += %w( selectivizr.js )
 
 Requirements
 ============
