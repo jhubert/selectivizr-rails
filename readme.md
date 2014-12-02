@@ -11,7 +11,7 @@ Add the following to your Gemfile and run `bundle install`:
 Add the following to the `head` tag in your layout:
 
     <!--[if lte IE 8]>
-    = javascript_include_tag 'selectivizr'
+    <%= javascript_include_tag 'selectivizr' %>
     <![endif]-->
 
 ## Requirements
